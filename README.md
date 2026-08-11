@@ -7,7 +7,7 @@ describes any real institution's internal data.**
 | File | What it is |
 |---|---|
 | `UK_SME_Bank_Bottom_Up_Unit_Economics.xlsx` | The reference model: 9 tabs, ~600 live formulas, from customer bounding through per-product economic profit, plus a flow register. |
-| `meridian_model.xlsx` / `.xls` | A second worked example at a smaller scale ("Meridian", fictional), built from the same method. `.xls` is the legacy-format copy. |
+| `meridian_model.xls` | A second worked example at a smaller scale ("Meridian", fictional), built from the same method. |
 | `meridian_fact_pack.md` | The synthetic input data behind the Meridian model, including how missing inputs were flagged and banded. |
 
 ## How to use with an AI assistant
