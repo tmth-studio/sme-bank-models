@@ -4,10 +4,10 @@ Bottom-up unit-economics workbooks for a synthetic UK SME bank, provided for
 reference use. **Every figure is synthetic or from cited public sources; nothing here
 describes any real institution's internal data.**
 
-**Current workbook version: v1.1 (12 August 2026).** Every download self-identifies —
-the Guide tab's first line shows its version, with a change history beneath it. If your
-copy shows an older version, re-download; adapted copies should note which version they
-started from on their change-log tab.
+**Current workbook version: v1.2 (12 August 2026).** Every download self-identifies —
+the Guide tab's first line shows its version, with a change history beneath it. If your copy shows an older version, re-download — or fetch that exact version from the
+**Releases** page, where every published version remains permanently downloadable.
+Adapted copies should note which version they started from on their change-log tab.
 
 | File | What it is |
 |---|---|
