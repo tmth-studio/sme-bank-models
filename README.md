@@ -4,7 +4,7 @@ Bottom-up unit-economics workbooks for a synthetic UK SME bank, provided for
 reference use. **Every figure is synthetic or from cited public sources; nothing here
 describes any real institution's internal data.**
 
-**Current workbook version: v2.2.1 (22 August 2026).**
+**Current workbook version: v2.3 (22 August 2026).**
 
 > **v2.2 changes results.** Invoice finance penetration was 3% (an assumption). UK Finance
 > counts 40,100 businesses on invoice finance or asset-based lending at end-2024 against
