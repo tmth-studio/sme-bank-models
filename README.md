@@ -4,14 +4,14 @@ Bottom-up unit-economics workbooks for a synthetic UK SME bank, provided for
 reference use. **Every figure is synthetic or from cited public sources; nothing here
 describes any real institution's internal data.**
 
-**Current workbook version: v1.9 (22 August 2026).** Every download self-identifies —
+**Current workbook version: v2.0 (22 August 2026).** Every download self-identifies —
 the Guide tab's first line shows its version, with a change history beneath it. If your copy shows an older version, re-download — or fetch that exact version from the
 **Releases** page, where every published version remains permanently downloadable.
 Adapted copies should note which version they started from on their change-log tab.
 
 | File | What it is |
 |---|---|
-| `UK_SME_Bank_Bottom_Up_Unit_Economics.xlsx` | The reference model: 15 tabs, from customer bounding through per-product economic profit, plus a flow register, a demand layer and a process register. |
+| `UK_SME_Bank_Bottom_Up_Unit_Economics.xlsx` | The reference model: 16 tabs, from customer bounding through per-product economic profit, plus a flow register, a demand layer and a process register. |
 | `meridian_model.xls` | A second worked example at a smaller scale ("Meridian", fictional), built from the same method. |
 | `meridian_fact_pack.md` | The synthetic input data behind the Meridian model, including how missing inputs were flagged and banded. |
 
@@ -115,6 +115,36 @@ four times the scale, cost per customer falls from £1,454 to £1,196 and cost:i
 
 Three data points and one bank. This is directional evidence about the model's
 structure, not a validated forecast.
+
+## Trajectory (v2.0)
+
+Every other tab describes a steady state. Tab 12 describes getting there.
+
+Time stays **out** of the base model deliberately — at steady state a stock and a rate are
+the same statement, and that identity is what lets the whole chain work without a
+forecast. The trajectory runs the same model at a series of maturity states and reads the
+results as a cash flow: a wrapper around the snapshot, never inside it.
+
+Building one regional business centre from nothing — eight-year ramp, £6.0m and £3.0m of
+build cost, discounted at the model's own 12% cost of equity:
+
+| | |
+|---|---|
+| Peak funding need | **£8,299,327** |
+| Payback | year 7 |
+| NPV at 12% | **−£105,699** |
+
+The snapshot reports only the final year — 3,000 customers, 45.7% cost:income, £4.55m of
+profit — and on that evidence the business is comfortably good. The trajectory says it is
+marginal. Both are true about the same business, and until this tab existed the model
+could not tell the difference.
+
+That matters for anyone using this to size something that does not exist yet: every new
+business starts sub-scale, where fixed cost dominates and unit economics look nothing
+like the steady state.
+
+The ramp shape is an assumption, and a load-bearing one — reaching steady state in six
+years rather than eight moves the answer more than most of the pricing inputs do.
 
 ## How to use with an AI assistant
 
