@@ -4,7 +4,7 @@ Bottom-up unit-economics workbooks for a synthetic UK SME bank, provided for
 reference use. **Every figure is synthetic or from cited public sources; nothing here
 describes any real institution's internal data.**
 
-**Current workbook version: v1.6 (22 August 2026).** Every download self-identifies —
+**Current workbook version: v1.7 (22 August 2026).** Every download self-identifies —
 the Guide tab's first line shows its version, with a change history beneath it. If your copy shows an older version, re-download — or fetch that exact version from the
 **Releases** page, where every published version remains permanently downloadable.
 Adapted copies should note which version they started from on their change-log tab.
@@ -83,6 +83,38 @@ at-scale.
 
 That defect matters beyond this workbook. Every new business idea starts sub-scale, so
 a model valid only at scale cannot price one.
+
+## Operational leverage (v1.7)
+
+Every cost line in the model scaled linearly with its driver. That forces a cost
+elasticity of exactly 1.0, which makes cost per customer flat at every scale — an
+assumption no real business satisfies, and one the model previously had no way even to
+state.
+
+Allica's own accounts measure it. Cost against lending book:
+
+| Year | Book | Operating cost | Cost / book | Elasticity |
+|---|---|---|---|---|
+| 2022 | £1,348m | £41.4m | 3.07% | — |
+| 2023 | £1,977m | £56.4m | 2.85% | **0.808** |
+| 2024 | £3,000m | £73.1m | 2.44% | **0.622** |
+
+Arc elasticities, no functional form imposed. Cost rises materially more slowly than the
+book, and the gap widens as the bank grows.
+
+**Out of sample:** the 0.808 elasticity measured on 2022–23, carried forward, predicts
+2024 profit before tax at £24.0m against £29.9m actual — a 20% error on the residual of
+three larger numbers, improved from 26% under a constant marginal cost. It still
+under-predicts, because leverage steepened to 0.622: efficiency improved faster than the
+prior year could have told you.
+
+**Inputs section O** adds the cost scale elasticity and the customer count the
+per-customer rates are calibrated at. Default 1.0 reproduces v1.6 exactly. At 0.808 and
+four times the scale, cost per customer falls from £1,454 to £1,196 and cost:income from
+45.7% to 37.6%.
+
+Three data points and one bank. This is directional evidence about the model's
+structure, not a validated forecast.
 
 ## How to use with an AI assistant
 
