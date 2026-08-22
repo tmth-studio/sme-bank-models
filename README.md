@@ -4,14 +4,14 @@ Bottom-up unit-economics workbooks for a synthetic UK SME bank, provided for
 reference use. **Every figure is synthetic or from cited public sources; nothing here
 describes any real institution's internal data.**
 
-**Current workbook version: v2.0 (22 August 2026).** Every download self-identifies —
+**Current workbook version: v2.1 (22 August 2026).** Every download self-identifies —
 the Guide tab's first line shows its version, with a change history beneath it. If your copy shows an older version, re-download — or fetch that exact version from the
 **Releases** page, where every published version remains permanently downloadable.
 Adapted copies should note which version they started from on their change-log tab.
 
 | File | What it is |
 |---|---|
-| `UK_SME_Bank_Bottom_Up_Unit_Economics.xlsx` | The reference model: 16 tabs, from customer bounding through per-product economic profit, plus a flow register, a demand layer and a process register. |
+| `UK_SME_Bank_Bottom_Up_Unit_Economics.xlsx` | The reference model: 17 tabs, from customer bounding through per-product economic profit, plus a flow register, a demand layer and a process register. |
 | `meridian_model.xls` | A second worked example at a smaller scale ("Meridian", fictional), built from the same method. |
 | `meridian_fact_pack.md` | The synthetic input data behind the Meridian model, including how missing inputs were flagged and banded. |
 
