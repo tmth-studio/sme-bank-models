@@ -4,7 +4,14 @@ Bottom-up unit-economics workbooks for a synthetic UK SME bank, provided for
 reference use. **Every figure is synthetic or from cited public sources; nothing here
 describes any real institution's internal data.**
 
-**Current workbook version: v2.1 (22 August 2026).** Every download self-identifies —
+**Current workbook version: v2.2 (22 August 2026).**
+
+> **v2.2 changes results.** Invoice finance penetration was 3% (an assumption). UK Finance
+> counts 40,100 businesses on invoice finance or asset-based lending at end-2024 against
+> 5.63m active companies — 0.71%. The model was carrying 4.2x too many adopters of its
+> highest-value product. Corrected in the base: profit before tax falls 22.6% and
+> cost:income moves from 45.7% to 51.3%. If you have adapted an earlier version, this is
+> the one change worth pulling through. Every download self-identifies —
 the Guide tab's first line shows its version, with a change history beneath it. If your copy shows an older version, re-download — or fetch that exact version from the
 **Releases** page, where every published version remains permanently downloadable.
 Adapted copies should note which version they started from on their change-log tab.
@@ -130,11 +137,11 @@ build cost, discounted at the model's own 12% cost of equity:
 
 | | |
 |---|---|
-| Peak funding need | **£8,299,327** |
-| Payback | year 7 |
-| NPV at 12% | **−£105,699** |
+| Peak funding need | **£8,527,576** |
+| Payback | year 8 |
+| NPV at 12% | **−£1,973,660** |
 
-The snapshot reports only the final year — 3,000 customers, 45.7% cost:income, £4.55m of
+The snapshot reports only the final year — 3,000 customers, 51.3% cost:income, £3.52m of
 profit — and on that evidence the business is comfortably good. The trajectory says it is
 marginal. Both are true about the same business, and until this tab existed the model
 could not tell the difference.
