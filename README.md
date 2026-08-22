@@ -4,14 +4,14 @@ Bottom-up unit-economics workbooks for a synthetic UK SME bank, provided for
 reference use. **Every figure is synthetic or from cited public sources; nothing here
 describes any real institution's internal data.**
 
-**Current workbook version: v1.5 (22 August 2026).** Every download self-identifies —
+**Current workbook version: v1.6 (22 August 2026).** Every download self-identifies —
 the Guide tab's first line shows its version, with a change history beneath it. If your copy shows an older version, re-download — or fetch that exact version from the
 **Releases** page, where every published version remains permanently downloadable.
 Adapted copies should note which version they started from on their change-log tab.
 
 | File | What it is |
 |---|---|
-| `UK_SME_Bank_Bottom_Up_Unit_Economics.xlsx` | The reference model: 13 tabs, from customer bounding through per-product economic profit, plus a flow register, a demand layer and a process register. |
+| `UK_SME_Bank_Bottom_Up_Unit_Economics.xlsx` | The reference model: 15 tabs, from customer bounding through per-product economic profit, plus a flow register, a demand layer and a process register. |
 | `meridian_model.xls` | A second worked example at a smaller scale ("Meridian", fictional), built from the same method. |
 | `meridian_fact_pack.md` | The synthetic input data behind the Meridian model, including how missing inputs were flagged and banded. |
 
@@ -51,6 +51,38 @@ become to reach a target cost:income.
 **Both layers ship empty on purpose.** Every cell that needs an institution's own data is
 blank and carries the query that would fill it. Invented rates get contradicted by real
 cohort data, which discredits the parts of a model that are right.
+
+## What has been tested (v1.6)
+
+Two tabs exist to stop the model being taken on trust.
+
+**`10. Elasticities`** — every input bumped by 1%, the whole workbook recalculated, and
+the resulting change in profit, cost:income, return on equity and income recorded. 145
+inputs swept. Only one clears an elasticity of 1.0 on profit: the term loan customer
+rate, at **+1.25**. Reachable market and penetration are exactly **+1.00** — pure scale.
+Nothing else reaches 0.53. Elasticities are local to this operating point, and they say
+nothing about which inputs are actually movable.
+
+**`11. Backtest`** — the model configured to Allica Bank Limited's observable FY2023
+shape and compared against its audited accounts:
+
+| | Model | Actual | |
+|---|---|---|---|
+| Total operating income | £93.5m | £86.8m | **1.08x** |
+| Total operating costs | £8.2m | £56.4m | **0.14x** |
+| Cost:income | 8.7% | 65.0% | 0.13x |
+
+The revenue engine reproduces a real bank to within 8% from public inputs. The cost
+engine fails by an order of magnitude, and the reason is specific: head-office cost was
+modelled purely per customer, which is a scale assumption wearing the costume of a cost
+driver. Fine near the book size it was calibrated on; wrong away from it.
+
+**Inputs section N** is the fix — each head-office pool now takes a fixed component,
+defaulting to zero so v1.5 results are unchanged. Set it to model a bank away from
+at-scale.
+
+That defect matters beyond this workbook. Every new business idea starts sub-scale, so
+a model valid only at scale cannot price one.
 
 ## How to use with an AI assistant
 
